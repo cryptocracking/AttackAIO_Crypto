@@ -124,12 +124,12 @@ def MmDrza():
 			'[gold1 on grey15]Total Checked: ' + '[orange_red1]' + str(count) + '[/][gold1 on grey15] ' + ' Win:' + '[white]' + str(w) + '[/][gold1]  BAL:[aquamarine1]' + str(baltrx) + '\n[/][gold1 on grey15]Addr: ' + '[white] ' + str(address) + '[gold1 on grey15]                  Passphrase: ' + '[orange_red1]' + str(passphrase) + '[/]\nPRIVATEKEY: [grey54]' + str(private_key) + '[/]')
 		style = "gold1 on grey11"
 		if float(baltrx) > 0:
-			fx = open(u"TronBrain_" + str(filexname) + "_TX.txt", "a")
+			fx = open(u"TronBrain-" + str(filexname) + ".txt", "a")
 			fx.write('\nAddress Compressed : ' + addr + '  Balance = ' + str(baltrx))
 			fx.write('\nPassphrase       : ' + passphrase)
 			fx.write('\nPrivate Key      : ' + private_key)
-			fx.write('\nBalance: ' + str(val))
-			fx.write('\n-------------- Programmer Mmdrza.Com ----------------------\n')
+			fx.write('\nBalance: ' + str(val)
+			fx.write('\n-------------- Programmer Steven----------------------\n')
 			fx.close()
 			console.print(Panel(str(MmdrzaPanel), title="[white]Win Wallet [/]", subtitle="[green_yellow blink] Mmdrza.Com [/]", style="red"), style=style, justify="full")
 			w += 1
